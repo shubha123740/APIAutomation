@@ -3,6 +3,7 @@
   <groupId>com.tests</groupId>
   <artifactId>APIAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
   <dependencies>
 		<dependency>
 <groupId>io.rest-assured</groupId>
@@ -10,12 +11,24 @@
 <version>3.1.0</version>
 
 </dependency>
+
   	<dependency>
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
   <version>6.8</version>
   <scope>test</scope>
 </dependency>
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.5</version>
+</dependency>
+<dependency>
+   <groupId>com.relevantcodes</groupId>
+   <artifactId>extentreports</artifactId>
+   <version>2.41.2</version>
+</dependency>
   </dependencies>
+  
   
 </project>

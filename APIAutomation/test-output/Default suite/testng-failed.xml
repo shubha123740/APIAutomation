@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scripts.deleteUser">
+      <class name="com.scripts.createUser">
         <methods>
-          <include name="deleteUser"/>
+          <include name="createusers"/>
         </methods>
-      </class> <!-- com.scripts.deleteUser -->
+      </class> <!-- com.scripts.createUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

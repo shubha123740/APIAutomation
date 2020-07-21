@@ -1,153 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14754" started-at="2020-06-12T11:37:30 IST" finished-at="2020-06-12T11:37:45 IST">
+  <suite name="Default suite" duration-ms="6792" started-at="2020-06-28T17:17:40 IST" finished-at="2020-06-28T17:17:47 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="14754" started-at="2020-06-12T11:37:30 IST" finished-at="2020-06-12T11:37:45 IST">
-      <class name="com.scripts.updateUser">
-        <test-method status="PASS" signature="updateUser(java.lang.String, java.lang.String)[pri:0, instance:com.scripts.updateUser@6321e813]" name="updateUser" duration-ms="1166" started-at="2020-06-12T11:37:43 IST" data-provider="dataforPost1" finished-at="2020-06-12T11:37:44 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sona]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[job]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser -->
-      </class> <!-- com.scripts.updateUser -->
+    <test name="Default test" duration-ms="6792" started-at="2020-06-28T17:17:40 IST" finished-at="2020-06-28T17:17:47 IST">
       <class name="com.scripts.LoginUser">
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.scripts.LoginUser@3a883ce7]" name="login" duration-ms="1084" started-at="2020-06-12T11:37:36 IST" data-provider="dataforPost3" finished-at="2020-06-12T11:37:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[eve.holt@reqres.in]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cityslicka]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="login()[pri:0, instance:com.scripts.LoginUser@74650e52]" name="login" duration-ms="6646" started-at="2020-06-28T17:17:40 IST" finished-at="2020-06-28T17:17:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- com.scripts.LoginUser -->
-      <class name="com.scripts.RegisterUser">
-        <test-method status="PASS" signature="register(java.lang.String, java.lang.String)[pri:0, instance:com.scripts.RegisterUser@cd2dae5]" name="register" duration-ms="5464" started-at="2020-06-12T11:37:30 IST" data-provider="dataforPost" finished-at="2020-06-12T11:37:36 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[eve.holt@reqres.in]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pistol]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-      </class> <!-- com.scripts.RegisterUser -->
-      <class name="com.scripts.deleteUser">
-        <test-method status="PASS" signature="DeleteUser()[pri:0, instance:com.scripts.deleteUser@79be0360]" name="DeleteUser" duration-ms="865" started-at="2020-06-12T11:37:44 IST" finished-at="2020-06-12T11:37:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteUser -->
-      </class> <!-- com.scripts.deleteUser -->
-      <class name="com.scripts.createUser">
-        <test-method status="PASS" signature="createusers(java.lang.String, java.lang.String)[pri:0, instance:com.scripts.createUser@4973813a]" name="createusers" duration-ms="1953" started-at="2020-06-12T11:37:37 IST" data-provider="dataforPost2" finished-at="2020-06-12T11:37:39 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[morpheus]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[leader]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createusers -->
-        <test-method status="PASS" signature="createusers(java.lang.String, java.lang.String)[pri:0, instance:com.scripts.createUser@4973813a]" name="createusers" duration-ms="1068" started-at="2020-06-12T11:37:39 IST" data-provider="dataforPost2" finished-at="2020-06-12T11:37:40 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sonam]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[leader]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createusers -->
-        <test-method status="PASS" signature="createusers(java.lang.String, java.lang.String)[pri:0, instance:com.scripts.createUser@4973813a]" name="createusers" duration-ms="1020" started-at="2020-06-12T11:37:40 IST" data-provider="dataforPost2" finished-at="2020-06-12T11:37:41 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[shubha]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[leader]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createusers -->
-        <test-method status="PASS" signature="createusers(java.lang.String, java.lang.String)[pri:0, instance:com.scripts.createUser@4973813a]" name="createusers" duration-ms="911" started-at="2020-06-12T11:37:41 IST" data-provider="dataforPost2" finished-at="2020-06-12T11:37:42 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[shikha]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[job]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createusers -->
-        <test-method status="PASS" signature="createusers(java.lang.String, java.lang.String)[pri:0, instance:com.scripts.createUser@4973813a]" name="createusers" duration-ms="1064" started-at="2020-06-12T11:37:42 IST" data-provider="dataforPost2" finished-at="2020-06-12T11:37:43 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sonia]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[leader]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createusers -->
-      </class> <!-- com.scripts.createUser -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

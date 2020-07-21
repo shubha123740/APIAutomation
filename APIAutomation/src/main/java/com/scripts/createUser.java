@@ -1,26 +1,24 @@
 package com.scripts;
-import static io.restassured.RestAssured.*;
-
+import static io.restassured.RestAssured.given;
+import org.apache.commons.io.IOUtils;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.json.simple.JSONObject;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.RequestSpecification;
+//import io.restassured.internal.util.IOUtils;
 public class createUser {
 	static String response;
 	static List<String> list = new ArrayList<String>();
 	static String id;
 
-	@DataProvider(name = "dataforPost2")
+	/*@DataProvider(name = "dataforPost2")
 	public Object[][] dataforPost2() {
 
 	
@@ -32,30 +30,26 @@ public class createUser {
 
 		};
 
-	}
+	}*/
 
-	@Test(dataProvider = "dataforPost2")
-	public static void createusers(String name, String job) {
+	@Test
+	public static void createusers() throws IOException {
+		
+		FileInputStream FileInputStream=new FileInputStream(new File("C:\\Users\\user\\git\\APIAutomation\\APIAutomation\\Json\\data.json"));
 		RestAssured.baseURI = "https://reqres.in";
-		JSONObject requestParams = new JSONObject();
+		/*JSONObject requestParams = new JSONObject();
 		requestParams.put("name", name);
-		requestParams.put("job", job);
+		requestParams.put("job", job);*/
 
-		list.add(response);
-		for (int i = 0; i < list.size(); i++) {
-			if (i == 4) {
-				id = response;
-				System.out.println(id);
-			}
-		}
-
-		response = given().header("Content-Type", "application/json").body(requestParams.toJSONString()).
+		
+		response = given().header("Content-Type", "application/json").body(IOUtils.toString(FileInputStream, "UTF-8")).
 
 				when().post("https://reqres.in/api/users").
 
 				then().assertThat().statusCode(201)
 //.extract().body().asString()
 				.extract().path("id");
+		System.out.println(id);
 
 	}
 
