@@ -16,11 +16,12 @@
   <version>6.8</version>
   <scope>compile</scope>
 </dependency>
-  </dependencies>
-	<dependency>
+	  <dependency>
     <groupId>org.json</groupId>
     <artifactId>json</artifactId>
     <version>20200518</version>
 </dependency>
+  </dependencies>
+	
   
 </project>
